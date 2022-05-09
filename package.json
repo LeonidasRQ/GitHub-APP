@@ -1,0 +1,22 @@
+{
+  "name": "github-app",
+  "version": "1.0.0",
+  "description": "A fullstack web application which consumes the GitHub API for checking all the commits related to one GitHub Repository",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LeonidasRQ/GitHub-APP.git"
+  },
+  "author": "Leonidas Ramirez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LeonidasRQ/GitHub-APP/issues"
+  },
+  "homepage": "https://github.com/LeonidasRQ/GitHub-APP#readme",
+  "dependencies": {
+    "axios": "^0.27.2"
+  }
+}
