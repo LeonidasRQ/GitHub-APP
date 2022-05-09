@@ -7,8 +7,7 @@
     "test": "jest",
     "test-watch": "jest --watch",
     "watch": "nodemon src/server.js",
-    "start": "node src/server.js",
-    "cluster": "npx pm2 start ecosystem.config.js"
+    "start": "node src/server.js"
   },
   "author": "Leonidas Ramirez",
   "license": "ISC",

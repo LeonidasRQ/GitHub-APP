@@ -13,7 +13,7 @@ async function populateCommits() {
     "GET /repos/leonidasrq/GitHub-APP/commits"
   );
 
-  const commmits = response.data;
+  const commits = response.data;
 
   if (response.status !== 200) {
     console.log("Problem downloading posts data");
@@ -60,7 +60,7 @@ async function getAllCommits(skip, limit) {
 async function saveCommit(commit) {
   await commitsDB.findOneAndUpdate(
     {
-      objectId: commit.objectId,
+      sha: commit.sha,
     },
     commit,
     {

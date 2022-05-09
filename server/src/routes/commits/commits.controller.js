@@ -1,7 +1,7 @@
-const { getAllPlanets } = require("../../models/planets.model");
+const { getAllCommits } = require("../../models/commits/commits.model");
 
-async function httpGetAllPlanets(req, res) {
-  return await res.status(200).json(await getAllPlanets());
+async function httpGetAllCommits(req, res) {
+  return await res.status(200).json(await getAllCommits());
 }
 
-module.exports = { httpGetAllPlanets };
+module.exports = { httpGetAllCommits };
