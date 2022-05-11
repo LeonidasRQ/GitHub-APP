@@ -4,13 +4,15 @@ const commitsDB = require("./commits.mongo");
 
 require("dotenv").config();
 const GITHUB_TOKEN = process.env.GITHUB_TOKEN;
+const GITHUB_REPOSITORY_NAME = process.env.GITHUB_REPOSITORY_NAME;
+const GITHUB_REPOSITORY_OWNER = process.env.GITHUB_REPOSITORY_OWNER;
 
 async function populateCommits() {
   console.log("Downloading commits");
 
   const octokit = new Octokit(GITHUB_TOKEN);
   const response = await octokit.request(
-    "GET /repos/leonidasrq/GitHub-APP/commits"
+    `GET /repos/${GITHUB_REPOSITORY_OWNER}/${GITHUB_REPOSITORY_NAME}/commits`
   );
 
   const commits = response.data;
