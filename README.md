@@ -8,7 +8,7 @@ This web application uses the GitHub API for fetching all the commits from its o
 
 - Its important to create shared-cluster-database at the [MongoDB Atlas Website](https://www.mongodb.com/atlas/database)
 
-- Once the database is created you must create a new **_.env_** file with the following parameters:
+- Once the database is created you must add a new **_.env_** file at the `./server` folder with the following parameters:
 
 ```bash
   PORT=8000
