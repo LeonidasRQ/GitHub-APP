@@ -25,6 +25,8 @@ This web application uses the GitHub API for fetching all the commits from its o
 
 #### Install dependencies
 
+At the root folder of the project, you can execute the following commands
+
 ```bash
   npm run install
 ```
@@ -41,6 +43,8 @@ This web application uses the GitHub API for fetching all the commits from its o
   npm run test
 ```
 
+###### Note: When running tests, only backend tests will pass. Once the backend tests have been executed, you can press `Ctrl + c` for cancelling the process
+
 ## Running Dockerized Application on your Machine
 
 ### Pre-requisites
@@ -51,6 +55,11 @@ This web application uses the GitHub API for fetching all the commits from its o
 
 ```bash
   docker run --restart=always -p 8000:8000 leonidasrq/github-project
+```
+Once the Docker container is running, you can access the following address for checking it out:
+
+```bash
+  http://localhost:8000
 ```
 
 ## Check Production Environment on AWS
