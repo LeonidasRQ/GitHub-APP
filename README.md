@@ -1,6 +1,6 @@
 # GitHub Fullstack Application
 
-This web application uses the GitHub API for fetching all the commits from its own repository. It uses a cron job for fetching new commits posts every hour. It will be executed every hour at the 59th minute.
+This web application uses the GitHub API for fetching all the commits from its own repository. It uses a cron job for fetching new commits every hour. It will be executed every hour at the 59th minute.
 
 ## Running Locally
 
@@ -8,7 +8,7 @@ This web application uses the GitHub API for fetching all the commits from its o
 
 - Its important to create shared-cluster-database at the [MongoDB Atlas Website](https://www.mongodb.com/atlas/database)
 
-- Once the database is created you must create a new **_.env_** file with the following parameters:
+- Once the database is created you must add a new **_.env_** file at the `./server` folder with the following parameters:
 
 ```bash
   PORT=8000
@@ -55,4 +55,4 @@ This web application uses the GitHub API for fetching all the commits from its o
 
 ## Check Production Environment on AWS
 
-- You can access this web application's EC2 instance on AWS through this [link](http://50.17.27.250:8000/)
+- You can access to the EC2 instance on AWS through this [link](http://50.17.27.250:8000/)
